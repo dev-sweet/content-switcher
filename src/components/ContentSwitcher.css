@@ -1,0 +1,41 @@
+.button-group {
+}
+.button-group .content-switcher-btn {
+  width: 120px;
+  height: 45px;
+  background-color: rgba(230, 232, 235, 0.5);
+  font-size: 16px;
+  font-weight: 700;
+  color: #021434;
+  border: none;
+  outline: none;
+}
+.button-group .content-switcher-btn.selected {
+  background-color: rgba(0, 176, 240, 0.15);
+  color: #00b0f0;
+}
+
+.button-group .content-switcher-btn:hover {
+  background: #e6e8eb;
+  cursor: grab;
+}
+.button-group .content-switcher-btn:focus {
+  border: 1px solid #00b0f0;
+}
+.button-group .content-switcher-btn:disabled {
+  color: #0214347a;
+}
+.button-group .content-switcher-btn:disabled:hover {
+  background-color: rgba(230, 232, 235, 0.5);
+  color: #0214347a;
+  cursor: default;
+}
+
+@media only screen and (max-width: 768px) {
+  .button-group .content-switcher-btn {
+    background-color: transparent;
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+  }
+}
